@@ -1,4 +1,7 @@
     @media (max-width:1024px) {
+        nav {
+            padding: 0;
+        }
         .About .content .img {
             margin-top: 80px;
         }
