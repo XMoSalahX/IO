@@ -101,9 +101,14 @@ nav ul {
     display: none;
 }
 
-nav>button:focus ul,
-nav button:hover ul {
+nav div:hover ul {
     display: block;
+}
+
+nav ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul::before {
@@ -119,6 +124,7 @@ nav ul::before {
 nav ul li a {
     display: block;
     padding: 15px;
+    margin: 0;
     text-decoration: none;
     color: #e3e6e8;
     transition: .3s;
@@ -134,16 +140,10 @@ nav ul li a:hover {
     background-color: #333;
 }
 
-Menu {
+nav ol li:first-child {
     padding: 15px;
     margin: 0;
     color: #637988;
-}
-
-nav ul label {
-    display: block;
-    padding: 15px;
-    font-size: 12px;
 }
 
 nav ul a {
@@ -157,6 +157,18 @@ nav button {
     border-style: none;
     text-align: left;
     background-color: transparent;
+}
+
+nav ul>li:last-child {
+    display: block;
+    padding: 15px;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul>li:last-child a {
+    color: #637988;
 }
 
 .margin {
